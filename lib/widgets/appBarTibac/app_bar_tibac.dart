@@ -3,12 +3,10 @@ import 'package:petit_bac/config/theming/colors_constant.dart';
 
 class AppBarTibac extends StatelessWidget implements PreferredSizeWidget {
   final String logoPath;
-  final VoidCallback onMenuPressed;
 
   const AppBarTibac({
     super.key,
-    required this.logoPath,
-    required this.onMenuPressed,
+    required this.logoPath, required Null Function() onMenuPressed,
   });
 
   @override
@@ -19,7 +17,7 @@ class AppBarTibac extends StatelessWidget implements PreferredSizeWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            ColorsConstant.primaryYellow, 
+            ColorsConstant.primaryYellow,
             Color(0xFFFFF8E1),
           ],
         ),
@@ -57,7 +55,9 @@ class AppBarTibac extends StatelessWidget implements PreferredSizeWidget {
               ),
               IconButton(
                 icon: const Icon(Icons.menu_rounded, color: Colors.black, size: 34),
-                onPressed: onMenuPressed,
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
               ),
             ],
           ),
