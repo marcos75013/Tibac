@@ -1,9 +1,11 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:petit_bac/config/theming/colors_constant.dart';
-import 'package:petit_bac/pages/compte_rebours/compte_rebours_page.dart';
 import 'package:petit_bac/widgets/appBarTibac/app_bar_tibac.dart';
+import 'package:petit_bac/widgets/Drawer/drawer_content.dart';
 import 'package:petit_bac/widgets/bouton/bouton_widget.dart';
+import 'package:petit_bac/pages/compte_rebours/compte_rebours_page.dart';
 
 class ChoixLettrePage extends StatefulWidget {
   final List<String> categories;
@@ -78,7 +80,8 @@ class ChoixLettrePageState extends State<ChoixLettrePage> with SingleTickerProvi
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarTibac(logoPath: "lib/assets/pngs/petit_bac_logo.png", onMenuPressed: () {}),
+      appBar: AppBarTibac(logoPath: "lib/assets/pngs/petit_bac_logo.png", onMenuPressed: () {  },),
+      drawer: const DrawerContent(),
       body: Column(
         children: [
           const Padding(

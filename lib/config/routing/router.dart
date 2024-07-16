@@ -61,6 +61,24 @@ List<RouteBase> routes = <RouteBase>[
         child: const GamePage(letter: 'A', categories: [], initialScoreTotal: 0),
       );
     },
+  ),
+  GoRoute(
+    path: RoutesCatalog.createProfile,
+    pageBuilder: (context, state) {
+      return MaterialPage(
+        key: state.pageKey,
+        child: const HomePage(),
+      );
+    },
+  ),
+  GoRoute(
+    path: RoutesCatalog.mentionsLegales,
+    pageBuilder: (context, state) {
+      return MaterialPage(
+        key: state.pageKey,
+        child: const HomePage(),
+      );
+    },
   )
 
 ];

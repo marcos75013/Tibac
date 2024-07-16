@@ -5,6 +5,7 @@ import 'package:petit_bac/widgets/appBarTibac/app_bar_tibac.dart';
 import 'package:petit_bac/widgets/bouton/bouton_widget.dart';
 import 'package:petit_bac/widgets/card_title/card_title_widget.dart';
 import 'package:petit_bac/widgets/dropdown/category_dropdown.dart';
+import 'package:petit_bac/widgets/Drawer/drawer_content.dart'; // Assurez-vous d'importer le DrawerContent
 
 class CategoryPage extends StatefulWidget {
   const CategoryPage({super.key});
@@ -40,8 +41,11 @@ class CategoryPageState extends State<CategoryPage> {
     return Scaffold(
       appBar: AppBarTibac(
         logoPath: "lib/assets/pngs/petit_bac_logo.png",
-        onMenuPressed: () {},
+        onMenuPressed: () {
+          Scaffold.of(context).openDrawer();
+        },
       ),
+      drawer: const DrawerContent(), // Ajoutez le drawer ici
       body: Column(
         children: [
           const Padding(
