@@ -23,7 +23,7 @@ class AppBarGame extends StatelessWidget implements PreferredSizeWidget {
             end: Alignment.bottomCenter,
             colors: [
               ColorsConstant.primaryYellow,
-              Color(0xFFFFF8E1),
+              ColorsConstant.degradeLigthYellow,
             ],
           ),
         ),
@@ -44,10 +44,10 @@ class AppBarGame extends StatelessWidget implements PreferredSizeWidget {
                     style: const TextStyle(
                       fontSize: 70,
                       fontWeight: FontWeight.bold,
-                      color: Colors.yellow,
+                      color: ColorsConstant.yellow,
                       shadows: [
                         Shadow(
-                          color: Colors.black,
+                          color: ColorsConstant.black,
                           blurRadius: 10.0,
                           offset: Offset(2.0, 2.0),
                         ),
@@ -59,7 +59,7 @@ class AppBarGame extends StatelessWidget implements PreferredSizeWidget {
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                      color: ColorsConstant.black,
                       height: 0.5,
                     ),
                   ),

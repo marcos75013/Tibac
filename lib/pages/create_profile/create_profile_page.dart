@@ -62,7 +62,7 @@ class CreateProfilePageState extends State<CreateProfilePage> {
             ),
           ],
         ),
-        backgroundColor: ColorsConstant.horizontalLineColor,
+        backgroundColor: ColorsConstant.blue600,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -92,7 +92,7 @@ class CreateProfilePageState extends State<CreateProfilePage> {
               TextFormField(
                 decoration: const InputDecoration(
                   labelText: 'Email',
-                  labelStyle: TextStyle(color: ColorsConstant.foregroundColorBouton),
+                  labelStyle: TextStyle(color: ColorsConstant.black),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: ColorsConstant.primaryYellow),
                   ),
@@ -113,7 +113,7 @@ class CreateProfilePageState extends State<CreateProfilePage> {
               TextFormField(
                 decoration: const InputDecoration(
                   labelText: 'Mot de passe',
-                  labelStyle: TextStyle(color: ColorsConstant.foregroundColorBouton),
+                  labelStyle: TextStyle(color: ColorsConstant.black),
                   focusedBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: ColorsConstant.primaryYellow),
                   ),

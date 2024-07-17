@@ -32,7 +32,7 @@ class AppLoadingPageState extends State<AppLoadingPage> with SingleTickerProvide
   void _startLoading() {
     Future.delayed(const Duration(seconds: 4), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomePage()), 
+        MaterialPageRoute(builder: (context) => const HomePage()),
       );
     });
   }
@@ -46,7 +46,7 @@ class AppLoadingPageState extends State<AppLoadingPage> with SingleTickerProvide
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorsConstant.horizontalLineColor,
+      backgroundColor: ColorsConstant.blue600,
       body: Stack(
         children: [
           Center(

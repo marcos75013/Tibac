@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petit_bac/config/theming/colors_constant.dart';
 
 class CustomProgressPainter extends CustomPainter {
   final double progress;
@@ -8,7 +9,7 @@ class CustomProgressPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.blue
+      ..color = ColorsConstant.blueButton
       ..strokeWidth = size.height
       ..strokeCap = StrokeCap.round;
 

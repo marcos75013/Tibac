@@ -22,7 +22,7 @@ class CategoryDropdown extends StatelessWidget {
           contentPadding: EdgeInsets.symmetric(horizontal: 10.0),
           border: OutlineInputBorder(),
         ),
-        hint: const Text('Categories'), 
+        hint: const Text('Categories'),
         items: <String>[
           'Animal',
           'Pays',
@@ -53,7 +53,7 @@ class CategoryDropdown extends StatelessWidget {
         onChanged: onChanged,
         icon: const Icon(Icons.arrow_drop_down),
         iconSize: 24,
-        dropdownColor: ColorsConstant.backgroundBouton,
+        dropdownColor: ColorsConstant.white,
         borderRadius: BorderRadius.circular(12.0),
       ),
     );

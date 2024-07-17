@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petit_bac/config/theming/colors_constant.dart';
 import 'package:petit_bac/pages/category_page/category_page.dart';
 import 'package:petit_bac/pages/choix_lettre/choix_lettre_page.dart';
 import 'package:petit_bac/widgets/CategorieInput/category_input_field.dart';
@@ -44,8 +45,8 @@ class GamePageState extends State<GamePage> with SingleTickerProviderStateMixin 
       });
 
     _colorAnimation = ColorTween(
-      begin: Colors.green,
-      end: Colors.red,
+      begin: ColorsConstant.initialColorProgressionBar,
+      end: ColorsConstant.iconCloseRed,
     ).animate(_controller);
 
     _progressAnimation = Tween<double>(
@@ -161,8 +162,8 @@ class GamePageState extends State<GamePage> with SingleTickerProviderStateMixin 
                   onPressed: endGame,
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(120, 40),
-                    backgroundColor: Colors.red,
-                    foregroundColor: Colors.white,
+                    backgroundColor: ColorsConstant.redButton,
+                    foregroundColor: ColorsConstant.white,
                     textStyle: const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
@@ -175,8 +176,8 @@ class GamePageState extends State<GamePage> with SingleTickerProviderStateMixin 
                   onPressed: restartGame,
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(120, 40),
-                    backgroundColor: Colors.blue,
-                    foregroundColor: Colors.white,
+                    backgroundColor: ColorsConstant.blueButton,
+                    foregroundColor: ColorsConstant.white,
                     textStyle: const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
@@ -189,8 +190,8 @@ class GamePageState extends State<GamePage> with SingleTickerProviderStateMixin 
                   onPressed: finishChallenge,
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(120, 40),
-                    backgroundColor: Colors.orange,
-                    foregroundColor: Colors.white,
+                    backgroundColor: ColorsConstant.orangeButton,
+                    foregroundColor: ColorsConstant.white,
                     textStyle: const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
@@ -203,8 +204,8 @@ class GamePageState extends State<GamePage> with SingleTickerProviderStateMixin 
                   onPressed: initializeChallenge,
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(120, 40),
-                    backgroundColor: Colors.green,
-                    foregroundColor: Colors.white,
+                    backgroundColor: ColorsConstant.greenButton,
+                    foregroundColor: ColorsConstant.white,
                     textStyle: const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,

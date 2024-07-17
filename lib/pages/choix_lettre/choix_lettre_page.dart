@@ -92,7 +92,7 @@ class ChoixLettrePageState extends State<ChoixLettrePage> with SingleTickerProvi
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: ColorsConstant.black,
                 ),
               ),
             ),
@@ -111,7 +111,7 @@ class ChoixLettrePageState extends State<ChoixLettrePage> with SingleTickerProvi
                       onTap: () => toggleSelection(0),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: isManuel ? ColorsConstant.primaryYellow : Colors.white,
+                          color: isManuel ? ColorsConstant.primaryYellow : ColorsConstant.white,
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(12.0),
                             bottomLeft: Radius.circular(12.0),
@@ -122,7 +122,7 @@ class ChoixLettrePageState extends State<ChoixLettrePage> with SingleTickerProvi
                         child: Text(
                           'MANUELLEMENT',
                           style: TextStyle(
-                            color: isManuel ? Colors.black : Colors.black.withOpacity(0.6),
+                            color: isManuel ? ColorsConstant.black : ColorsConstant.black.withOpacity(0.6),
                             fontWeight: isManuel ? FontWeight.bold : FontWeight.normal,
                           ),
                         ),
@@ -134,7 +134,7 @@ class ChoixLettrePageState extends State<ChoixLettrePage> with SingleTickerProvi
                       onTap: () => toggleSelection(1),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: !isManuel ? ColorsConstant.primaryYellow : Colors.white,
+                          color: !isManuel ? ColorsConstant.primaryYellow : ColorsConstant.white,
                           borderRadius: const BorderRadius.only(
                             topRight: Radius.circular(12.0),
                             bottomRight: Radius.circular(12.0),
@@ -145,7 +145,7 @@ class ChoixLettrePageState extends State<ChoixLettrePage> with SingleTickerProvi
                         child: Text(
                           'ALEATOIRE',
                           style: TextStyle(
-                            color: !isManuel ? Colors.black : Colors.black.withOpacity(0.6),
+                            color: !isManuel ? ColorsConstant.black : ColorsConstant.black.withOpacity(0.6),
                             fontWeight: !isManuel ? FontWeight.bold : FontWeight.normal,
                           ),
                         ),
@@ -171,7 +171,7 @@ class ChoixLettrePageState extends State<ChoixLettrePage> with SingleTickerProvi
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
-                        color: selectedLetter == letter ? ColorsConstant.primaryYellow : Colors.black,
+                        color: selectedLetter == letter ? ColorsConstant.primaryYellow : ColorsConstant.black,
                       ),
                     ),
                   );
@@ -187,7 +187,7 @@ class ChoixLettrePageState extends State<ChoixLettrePage> with SingleTickerProvi
                   width: 200,
                   height: 200,
                   child: CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                    valueColor: AlwaysStoppedAnimation<Color>(ColorsConstant.blueButton),
                   ),
                 ),
               Text(
@@ -195,7 +195,7 @@ class ChoixLettrePageState extends State<ChoixLettrePage> with SingleTickerProvi
                 style: const TextStyle(
                   shadows: [
                     Shadow(
-                      color: Colors.black,
+                      color: ColorsConstant.black,
                       offset: Offset(2, 2),
                       blurRadius: 2,
                     ),

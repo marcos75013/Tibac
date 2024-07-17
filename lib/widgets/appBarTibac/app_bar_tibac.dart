@@ -6,7 +6,8 @@ class AppBarTibac extends StatelessWidget implements PreferredSizeWidget {
 
   const AppBarTibac({
     super.key,
-    required this.logoPath, required Null Function() onMenuPressed,
+    required this.logoPath,
+    required Null Function() onMenuPressed,
   });
 
   @override
@@ -18,18 +19,18 @@ class AppBarTibac extends StatelessWidget implements PreferredSizeWidget {
           end: Alignment.bottomCenter,
           colors: [
             ColorsConstant.primaryYellow,
-            Color(0xFFFFF8E1),
+            ColorsConstant.degradeLigthYellow,
           ],
         ),
         border: const Border(
           bottom: BorderSide(
-            color: ColorsConstant.horizontalLineColor,
+            color: ColorsConstant.blue600,
             width: 1,
           ),
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.5),
+            color: ColorsConstant.black.withOpacity(0.5),
             spreadRadius: 1,
             blurRadius: 5,
             offset: const Offset(0, -1),
@@ -54,7 +55,7 @@ class AppBarTibac extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ),
               IconButton(
-                icon: const Icon(Icons.menu_rounded, color: Colors.black, size: 34),
+                icon: const Icon(Icons.menu_rounded, color: ColorsConstant.black, size: 34),
                 onPressed: () {
                   Scaffold.of(context).openDrawer();
                 },

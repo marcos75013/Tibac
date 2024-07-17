@@ -16,11 +16,11 @@ class BoutonWidget extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        foregroundColor: ColorsConstant.foregroundColorBouton,
+        foregroundColor: ColorsConstant.black,
         backgroundColor: ColorsConstant.backgroundColorBouton,
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
         shape: RoundedRectangleBorder(
-          side: const BorderSide(color: ColorsConstant.borderBouton, width: 6),
+          side: const BorderSide(color: ColorsConstant.primaryYellow, width: 6),
           borderRadius: BorderRadius.circular(16),
         ),
       ),

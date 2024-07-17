@@ -1,5 +1,6 @@
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
+import 'package:petit_bac/config/theming/colors_constant.dart';
 
 class ConfettiDialog extends StatefulWidget {
   final int scoreTotal;
@@ -36,7 +37,7 @@ class ConfettiDialogState extends State<ConfettiDialog> {
             confettiController: _confettiController,
             blastDirectionality: BlastDirectionality.explosive,
             shouldLoop: false,
-            colors: const [Colors.red, Colors.blue, Colors.green, Colors.yellow],
+            colors: const [ColorsConstant.redButton, ColorsConstant.blueButton, ColorsConstant.greenButton, ColorsConstant.primaryYellow],
           ),
           Column(
             mainAxisSize: MainAxisSize.min,

@@ -35,7 +35,7 @@ class FeuilleCahier extends StatelessWidget {
         left: verticalLinePadding,
         child: Container(
           width: verticalLineWidth,
-          color: ColorsConstant.verticalLineColor,
+          color: ColorsConstant.red600,
         ),
       ),
     );
@@ -47,7 +47,7 @@ class FeuilleCahier extends StatelessWidget {
           left: 0,
           right: 0,
           child: const Divider(
-            color: ColorsConstant.horizontalLineColor,
+            color: ColorsConstant.blue600,
             thickness: 1,
           ),
         ),

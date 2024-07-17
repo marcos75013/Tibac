@@ -10,23 +10,22 @@ class LegalMentionsPage extends StatelessWidget {
       appBar: AppBar(
         title: Row(
           children: [
-           
             const SizedBox(width: 10),
             const Text(
               'Mentions légales',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: Colors.black,
+                color: ColorsConstant.black,
               ),
             ),
-             Image.asset(
+            Image.asset(
               'lib/assets/pngs/petit_bac_logo.png',
               height: 80,
             ),
           ],
         ),
-        backgroundColor: ColorsConstant.horizontalLineColor,
+        backgroundColor: ColorsConstant.blue600,
       ),
       body: const Padding(
         padding: EdgeInsets.all(16.0),
@@ -34,7 +33,6 @@ class LegalMentionsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              
               Text(
                 '1. Éditeur du site',
                 style: TextStyle(

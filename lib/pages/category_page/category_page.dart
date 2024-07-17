@@ -5,7 +5,7 @@ import 'package:petit_bac/widgets/appBarTibac/app_bar_tibac.dart';
 import 'package:petit_bac/widgets/bouton/bouton_widget.dart';
 import 'package:petit_bac/widgets/card_title/card_title_widget.dart';
 import 'package:petit_bac/widgets/dropdown/category_dropdown.dart';
-import 'package:petit_bac/widgets/Drawer/drawer_content.dart'; // Assurez-vous d'importer le DrawerContent
+import 'package:petit_bac/widgets/Drawer/drawer_content.dart';
 
 class CategoryPage extends StatefulWidget {
   const CategoryPage({super.key});
@@ -45,7 +45,7 @@ class CategoryPageState extends State<CategoryPage> {
           Scaffold.of(context).openDrawer();
         },
       ),
-      drawer: const DrawerContent(), // Ajoutez le drawer ici
+      drawer: const DrawerContent(),
       body: Column(
         children: [
           const Padding(
@@ -97,10 +97,10 @@ class CategoryPageState extends State<CategoryPage> {
                   runSpacing: 0,
                   children: selectedCategories.map((category) {
                     return Chip(
-                      labelStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.black),
+                      labelStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: ColorsConstant.black),
                       backgroundColor: ColorsConstant.primaryYellow,
                       label: Text(category),
-                      deleteIcon: const Icon(Icons.close, color: Colors.red, size: 16),
+                      deleteIcon: const Icon(Icons.close, color: ColorsConstant.iconCloseRed, size: 16),
                       onDeleted: () {
                         setState(() {
                           selectedCategories.remove(category);

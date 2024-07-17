@@ -96,11 +96,11 @@ class CategoryInputFieldState extends State<CategoryInputField> {
             child: isSatisfiedIconClicked
                 ? const Icon(
                     Icons.thumb_up,
-                    color: Colors.green,
+                    color: ColorsConstant.greenButton,
                   )
                 : Icon(
                     Icons.sentiment_satisfied,
-                    color: isDissatisfiedIconClicked ? Colors.grey : Colors.green,
+                    color: isDissatisfiedIconClicked ? Colors.grey : ColorsConstant.greenButton,
                   ),
           ),
           const SizedBox(width: 10),

@@ -23,17 +23,17 @@ class DrawerContentState extends State<DrawerContent> {
               Container(
                 height: 140, // Réduire la hauteur du DrawerHeader
                 decoration: const BoxDecoration(
-                  color: ColorsConstant.horizontalLineColor,
+                  color: ColorsConstant.blue600,
                 ),
                 child: Center(
                   child: Image.asset(
                     'lib/assets/pngs/petit_bac_logo.png',
-                    height: 140, // Ajustez la hauteur de l'image du logo selon vos besoins
+                    height: 140, 
                   ),
                 ),
               ),
               ListTile(
-                leading: const Icon(Icons.account_circle), // Icône pour Créer un profil
+                leading: const Icon(Icons.account_circle), 
                 title: const Text('Créer un profil'),
                 onTap: () {
                   Navigator.push(
@@ -45,14 +45,13 @@ class DrawerContentState extends State<DrawerContent> {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.history), // Icône pour Mon historique de jeu
                 title: const Text('Mon historique de jeu'),
                 onTap: () {
-                  // Action for game history
+                  
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.info), // Icône pour Mentions légales
+                leading: const Icon(Icons.info),
                 title: const Text('Mentions légales'),
                 onTap: () {
                   Navigator.push(
@@ -71,7 +70,7 @@ class DrawerContentState extends State<DrawerContent> {
             child: Text(
               'Version 1.0.0',
               style: TextStyle(
-                color: Colors.grey,
+                color: ColorsConstant.greyVersion,
                 fontSize: 12,
               ),
             ),

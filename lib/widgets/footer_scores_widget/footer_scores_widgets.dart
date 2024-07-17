@@ -21,7 +21,7 @@ class FooterScoresWidget extends StatelessWidget {
           end: Alignment.topCenter,
           colors: [
             ColorsConstant.primaryYellow,
-            Color(0xFFFFE082),
+            ColorsConstant.secondYellow,
           ],
         ),
         border: Border(
@@ -47,7 +47,7 @@ class FooterScoresWidget extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: ColorsConstant.white,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
@@ -72,7 +72,7 @@ class FooterScoresWidget extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: ColorsConstant.white,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
@@ -80,7 +80,7 @@ class FooterScoresWidget extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.green,
+                      color: ColorsConstant.greenButton,
                     ),
                     textAlign: TextAlign.center,
                   ),
