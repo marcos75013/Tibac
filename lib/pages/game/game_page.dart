@@ -34,9 +34,10 @@ class GamePageState extends State<GamePage> with SingleTickerProviderStateMixin 
   void initState() {
     super.initState();
     scoreTotal = widget.initialScoreTotal;
+    int totalSeconds = widget.categories.length * 10;
 
     _controller = AnimationController(
-      duration: const Duration(seconds: 60),
+      duration: Duration(seconds: totalSeconds),
       vsync: this,
     )..addListener(() {
         setState(() {});

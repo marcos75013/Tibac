@@ -84,6 +84,8 @@ class CategoryInputFieldState extends State<CategoryInputField> {
                     border: const OutlineInputBorder(),
                     errorText: _errorMessage,
                   ),
+                  autocorrect: false,
+                  autofillHints: const [],
                 ),
               ],
             ),
